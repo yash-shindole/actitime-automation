@@ -48,6 +48,7 @@ import org.testng.annotations.Test;
         } else {
             throw new Exception("status not  changed as planning");
         }
+        System.out.println("Hello yesh here");
     }
     @AfterClass
     public void tearDown(){
