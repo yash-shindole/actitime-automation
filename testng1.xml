@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestSuite"  verbose="1" >
+    <test name="regression" parallel="classes" thread-count="2">
+        <groups>
+            <run>
+                <include name="regression" />
+                <exclude name="sanity" />
+
+            </run>
+        </groups>
+        <classes>
+            <class name="com.project.test.LoginTest"/>
+            <class name="com.project.test.TaskTestCaseTestNG"/>
+            <class name="com.project.test.LoginTest"/>
+
+
+
+        </classes>
+
+
+    </test>
+</suite>
